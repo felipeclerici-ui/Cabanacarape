@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es" id="htmlRoot">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cabaña Carapé | Glamour & Adventure in the Uruguayan Mountains</title>
+  <meta name="description" content="Escape to Cabaña Carapé — a luxurious farm house in Sierras de Carape. Horseback riding, asados, stargazing & unforgettable experiences between Punta del Este and Montevideo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="https://cabanacarape.com" class="nav-logo">Cabaña Carapé</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#overview" data-i18n="nav.overview">La Cabaña</a></li>
+      <li><a href="#activities" data-i18n="nav.activities">Experiencias</a></li>
+      <li><a href="#farming" data-i18n="nav.farming">El Campo</a></li>
+      <li><a href="#booking" data-i18n="nav.booking">Reservar</a></li>
+      <li><a href="#about" data-i18n="nav.about">Nosotros</a></li>
+      <li class="lang-switcher">
+        <button type="button" data-lang="es" class="lang-btn active" aria-label="Español">ES</button>
+        <span class="lang-divider">|</span>
+        <button type="button" data-lang="en" class="lang-btn" aria-label="English">EN</button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-bg">
+      <img src="images/hero.jpeg" alt="Mountain farm house at sunset">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Sierras de Carapé · Maldonado & Lavalleja</p>
+      <h1 class="hero-title">Cabaña Carapé</h1>
+      <p class="hero-tagline" data-i18n="hero.tagline">Where glamour meets the wild. An undiscovered sanctuary between Punta del Este and Montevideo.</p>
+      <a href="#booking" class="hero-cta" data-i18n="hero.cta">Discover Your Escape</a>
+    </div>
+    <div class="hero-scroll">
+      <span data-i18n="hero.scroll">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- Overview Section -->
+  <section id="overview" class="section overview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="overview.label">The Place</span>
+        <h2 class="section-title" data-i18n="overview.title">La Cabaña & Su Entorno</h2>
+        <p class="section-desc" data-i18n="overview.desc">A chic retreat where rustic charm meets refined comfort. Our farm house sits at the border of Maldonado and Lavalleja, offering the perfect balance—close to Punta del Este's glamour and Montevideo's culture, yet worlds away in the serene Sierras de Carapé.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--large">
+          <img src="images/gallery-1.jpeg" alt="The barn">
+          <div class="gallery-caption" data-i18n="overview.gallery1">The barn</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery-2.jpeg" alt="Cozy interior">
+          <div class="gallery-caption" data-i18n="overview.gallery2">Rustic elegance</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery-3.jpeg" alt="Mountain view">
+          <div class="gallery-caption" data-i18n="overview.gallery3">Mountain vistas</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery-4.jpeg" alt="Nature landscape">
+          <div class="gallery-caption" data-i18n="overview.gallery4">Untouched nature</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery-5.jpeg" alt="Terrace view">
+          <div class="gallery-caption" data-i18n="overview.gallery5">Outdoor living</div>
+        </div>
+      </div>
+      <div class="location-block">
+        <div class="location-info">
+          <h3 data-i18n="overview.locationTitle">Ubicación Privilegiada</h3>
+          <p data-i18n="overview.locationDesc">Sierra de Carapé sits at the crossroads of Uruguay's most sought-after destinations. A short drive to Punta del Este's beaches and nightlife, or to Montevideo's historic charm—yet here, you're surrounded by rolling hills, native wildlife, and the authentic gaucho spirit.</p>
+          <div class="location-badges">
+            <span data-i18n="overview.badge1">~45 min to Punta del Este</span>
+            <span data-i18n="overview.badge2">~1.5 hrs to Montevideo</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities Section -->
+  <section id="activities" class="section activities">
+    <div class="activities-bg"></div>
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-label" data-i18n="activities.label">Experiences</span>
+        <h2 class="section-title" data-i18n="activities.title">Vive la Aventura</h2>
+        <p class="section-desc" data-i18n="activities.desc">From sunrise to starlight, every moment at Cabaña Carapé is an invitation to discover. Our curated experiences blend adventure with indulgence.</p>
+      </div>
+      <div class="activities-grid">
+        <article class="activity-card">
+          <div class="activity-image">
+            <img src="images/activity-1.jpeg" alt="Horseback riding">
+          </div>
+          <div class="activity-content">
+            <h3 data-i18n="activities.1.title">Cabalgatas</h3>
+            <p data-i18n="activities.1.desc">Explore the sierras on horseback. Ride through valleys and hills with our gentle horses, guided by local gauchos who know every trail.</p>
+          </div>
+        </article>
+        <article class="activity-card">
+          <div class="activity-image">
+            <img src="images/activity-2.jpeg" alt="Asado barbecue">
+          </div>
+          <div class="activity-content">
+            <h3 data-i18n="activities.2.title">Asados Tradicionales</h3>
+            <p data-i18n="activities.2.desc">Authentic Uruguayan barbecue with lamb and beef from local producers. Slow-cooked over wood fire, served under the stars.</p>
+          </div>
+        </article>
+        <article class="activity-card">
+          <div class="activity-image">
+            <img src="images/activity-3.jpeg" alt="Breakfast">
+          </div>
+          <div class="activity-content">
+            <h3 data-i18n="activities.3.title">Desayunos de Campo</h3>
+            <p data-i18n="activities.3.desc">Start your day with a breakfast prepared and served by our staff. Fresh, local ingredients and the warmth of Uruguayan hospitality.</p>
+          </div>
+        </article>
+        <article class="activity-card">
+          <div class="activity-image">
+            <img src="images/activity-4.jpeg" alt="Mountain hiking">
+          </div>
+          <div class="activity-content">
+            <h3 data-i18n="activities.4.title">Senderismo</h3>
+            <p data-i18n="activities.4.desc">Day hikes through the mountains. Discover hidden trails, native flora, and breathtaking viewpoints across the sierras.</p>
+          </div>
+        </article>
+        <article class="activity-card">
+          <div class="activity-image">
+            <img src="images/activity-5.jpeg" alt="Night hike">
+          </div>
+          <div class="activity-content">
+            <h3 data-i18n="activities.5.title">Caminatas Nocturnas</h3>
+            <p data-i18n="activities.5.desc">Venture into the night. Guided walks through the mountains as the landscape transforms under moonlight.</p>
+          </div>
+        </article>
+        <article class="activity-card">
+          <div class="activity-image">
+            <img src="images/activity-6.jpeg" alt="Stargazing Milky Way">
+          </div>
+          <div class="activity-content">
+            <h3 data-i18n="activities.6.title">Observación de Estrellas</h3>
+            <p data-i18n="activities.6.desc">Far from city lights, witness the Milky Way in all its glory. A magical view of the cosmos from our privileged location.</p>
+          </div>
+        </article>
+        <article class="activity-card">
+          <div class="activity-image">
+            <img src="images/activity-7.jpeg" alt="Feeding calves and lambs">
+          </div>
+          <div class="activity-content">
+            <h3 data-i18n="activities.7.title">Alimentar a los Pequeños</h3>
+            <p data-i18n="activities.7.desc">If in livestock birth season, you may have the opportunity of feeding the little calves and lambs who need some extra help in order to get through winter. They will be happy in receiving you!</p>
+          </div>
+        </article>
+        <article class="activity-card">
+          <div class="activity-image">
+            <img src="images/activity-9.jpeg" alt="Wildlife">
+          </div>
+          <div class="activity-content">
+            <h3 data-i18n="activities.8.title">Avistamiento de Fauna</h3>
+            <p data-i18n="activities.8.desc">Native wildlife in their natural habitat. Birds, deer, and the rich biodiversity of Uruguay's interior.</p>
+          </div>
+        </article>
+        <article class="activity-card">
+          <div class="activity-image">
+            <img src="images/activity-8.jpeg" alt="Angus cattle">
+          </div>
+          <div class="activity-content">
+            <h3 data-i18n="activities.9.title">Tour por el Ganado Angus</h3>
+            <p data-i18n="activities.9.desc">Walk among our Angus herd. Learn about Uruguay's legendary beef production and the gaucho way of life.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Farming / Voisin Section -->
+  <section id="farming" class="section farming">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-i18n="farming.label">Nuestra Filosofía</span>
+        <h2 class="section-title" data-i18n="farming.title">Gestión del Campo</h2>
+        <div class="farming-content">
+          <p data-i18n="farming.p1">The Voisin Rational Grazing system is a regenerative approach where cattle rotate through small paddocks in short bursts, allowing pastures to rest and recover. The whole farm is connected via corridors, so the herd moves naturally between areas while we use natural, non-invasive seeding to continuously upgrade our pastures—working with the land, not against it.</p>
+          <p data-i18n="farming.p2">We adopted this system during the pandemic, and it has transformed how we work. It allows us to feed more cattle in less space, while dramatically improving biodiversity: the soil receives rich compost from the cattle's manure and waste, building fertility and life back into the land. This is a system that is changing the world—one pasture at a time.</p>
+        </div>
+      </div>
+      <div class="elcampo-gallery">
+        <div class="elcampo-item"><img src="images/elcampo1.jpeg" alt="Voisin grazing system - pastures"></div>
+        <div class="elcampo-item"><img src="images/elcampo2.jpeg" alt="Farm corridors and paddocks"></div>
+        <div class="elcampo-item"><img src="images/elcampo3.jpeg" alt="Regenerative grazing"></div>
+        <div class="elcampo-item"><img src="images/elcampo4.jpeg" alt="Pasture recovery"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="section booking">
+    <div class="container">
+      <div class="booking-grid">
+        <div class="booking-info">
+          <span class="section-label" data-i18n="booking.label">Reservas</span>
+          <h2 class="section-title" data-i18n="booking.title">Planifica Tu Escape</h2>
+          <p data-i18n="booking.desc">Ready to experience Cabaña Carapé? Get in touch to check availability, ask about our experiences, or plan your perfect stay in the Uruguayan mountains.</p>
+          <div class="contact-details">
+            <p><strong data-i18n="booking.location">Ubicación:</strong> <span data-i18n="booking.locationValue">Sierra de Carapé · Frontera Maldonado & Lavalleja</span></p>
+            <p data-i18n="booking.response">We'll respond within 24 hours.</p>
+            <div class="social-links">
+              <a href="https://www.instagram.com/cabanacarape/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+              <a href="https://wa.me/59899630056" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WhatsApp +598 99 630 056</a>
+            </div>
+          </div>
+        </div>
+        <form class="booking-form" id="bookingForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <div class="form-group">
+            <label for="name" data-i18n="booking.name">Nombre completo</label>
+            <input type="text" id="name" name="name" required data-i18n-placeholder="booking.namePlaceholder" placeholder="Tu nombre">
+          </div>
+          <div class="form-group">
+            <label for="email" data-i18n="booking.email">Email</label>
+            <input type="email" id="email" name="email" required data-i18n-placeholder="booking.emailPlaceholder" placeholder="tu@email.com">
+          </div>
+          <div class="form-group">
+            <label for="phone" data-i18n="booking.phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" data-i18n-placeholder="booking.phonePlaceholder" placeholder="+598 ...">
+          </div>
+          <div class="form-group">
+            <label for="dates" data-i18n="booking.dates">Fechas de interés</label>
+            <input type="text" id="dates" name="dates" data-i18n-placeholder="booking.datesPlaceholder" placeholder="Ej: 15-20 marzo 2025">
+          </div>
+          <div class="form-group">
+            <label for="guests" data-i18n="booking.guests">Número de huéspedes</label>
+            <input type="number" id="guests" name="guests" min="1" placeholder="1">
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="booking.message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" data-i18n-placeholder="booking.messagePlaceholder" placeholder="Cuéntanos sobre tu viaje, experiencias que te interesan..."></textarea>
+          </div>
+          <button type="submit" class="form-submit" data-i18n="booking.submit">Enviar Consulta</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="about-bg">
+      <img src="images/about.jpeg" alt="Mountain landscape">
+      <div class="about-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="about-content">
+        <span class="section-label" data-i18n="about.label">Quiénes Somos</span>
+        <h2 class="section-title">Cabaña Carapé</h2>
+        <p class="about-text" data-i18n="about.p1">We fell in love with the Sierras de Carapé—its raw beauty, its silence, its spirit. Cabaña Carapé was born from a desire to share this undiscovered corner of Uruguay with those who seek something different: not just a place to stay, but an experience that blends the glamour of the coast with the authentic adventure of the interior.</p>
+        <p class="about-text" data-i18n="about.p2">Our team—the people who work the land, care for the animals, and welcome our guests—are the heart of this place. They bring generations of knowledge, warmth, and the true meaning of Uruguayan hospitality.</p>
+        <p class="about-tagline" data-i18n="about.tagline">Come discover the magic. We're waiting for you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="https://cabanacarape.com" class="footer-logo">Cabaña Carapé</a>
+        <p class="footer-location" data-i18n="footer.location">Sierra de Carapé · Maldonado & Lavalleja · Uruguay</p>
+        <p class="footer-domain"><a href="https://cabanacarape.com">cabanacarape.com</a></p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/cabanacarape/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+          <a href="https://wa.me/59899630056" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WhatsApp +598 99 630 056</a>
+        </div>
+        <div class="footer-links">
+          <a href="#overview" data-i18n="nav.overview">La Cabaña</a>
+          <a href="#activities" data-i18n="nav.activities">Experiencias</a>
+          <a href="#farming" data-i18n="nav.farming">El Campo</a>
+          <a href="#booking" data-i18n="nav.booking">Reservar</a>
+          <a href="#about" data-i18n="nav.about">Nosotros</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
