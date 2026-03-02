@@ -224,7 +224,8 @@
             </div>
           </div>
         </div>
-        <form class="booking-form" id="bookingForm" action="https://formspree.io/f/xqedvene" method="POST">
+        <form class="booking-form" id="bookingForm" name="booking" method="POST" data-netlify="true" data-netlify-redirect="/thank-you.html" action="/">
+          <input type="hidden" name="form-name" value="booking">
           <div class="form-group">
             <label for="name" data-i18n="booking.name">Nombre completo</label>
             <input type="text" id="name" name="name" required data-i18n-placeholder="booking.namePlaceholder" placeholder="Tu nombre">

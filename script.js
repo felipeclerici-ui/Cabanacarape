@@ -111,37 +111,10 @@ function initBookingForm() {
   const form = document.getElementById('bookingForm');
   if (!form) return;
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
+  form.addEventListener('submit', (e) => {
     const submitBtn = form.querySelector('.form-submit');
-    const originalKey = submitBtn.getAttribute('data-i18n');
     submitBtn.textContent = t('booking.sending');
     submitBtn.disabled = true;
-
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { Accept: 'application/json' }
-      });
-
-      if (response.ok) {
-        submitBtn.textContent = t('booking.success');
-        submitBtn.style.background = '#8b9a7a';
-        form.reset();
-      } else {
-        throw new Error('Error');
-      }
-    } catch (err) {
-      submitBtn.textContent = t('booking.error');
-      submitBtn.style.background = '#a63d3d';
-    }
-
-    setTimeout(() => {
-      submitBtn.textContent = t(originalKey || 'booking.submit');
-      submitBtn.style.background = '';
-      submitBtn.disabled = false;
-    }, 3000);
+    // Form submits normally - Netlify Forms handles it
   });
 }
